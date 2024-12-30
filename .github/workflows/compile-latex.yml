@@ -8,7 +8,7 @@ on:
 
 env:
   TEX_FILE: main.tex  # Change this to your LaTeX file name
-  PDF_FILE: your-cv.pdf  # Change this to your desired PDF name
+  PDF_FILE: main.pdf  # Change this to your desired PDF name
 
 jobs:
   compile-latex:
