@@ -28,8 +28,8 @@ jobs:
     # Step 3: Save the compiled PDF to the repository
     - name: Commit and push PDF
       run: |
-        git config --global user.name "github-actions[bot]"
-        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        git config --global user.name "martinippo01"
+        git config --global user.email "martinippo@gmail.com"
         mv "${{ env.PDF_FILE }}" output/${{ env.PDF_FILE }}  # Optional: Move to a specific folder
         git add output/${{ env.PDF_FILE }}
         git commit -m "Update compiled CV PDF"
