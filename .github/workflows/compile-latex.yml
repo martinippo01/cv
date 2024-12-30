@@ -1,0 +1,39 @@
+name: Compile LaTeX CV
+
+on:
+  push:
+    branches:
+      - main  # Run the workflow on pushes to the main branch
+  workflow_dispatch:  # Allow manual triggering of the workflow
+
+env:
+  TEX_FILE: main.tex  # Change this to your LaTeX file name
+  PDF_FILE: Ippolito-cv.pdf  # Change this to your desired PDF name
+
+jobs:
+  compile-latex:
+    runs-on: ubuntu-latest
+
+    steps:
+    # Step 1: Check out the repository
+    - name: Check out repository
+      uses: actions/checkout@v3
+
+    # Step 2: Set up LaTeX environment
+    - name: Set up TeX Live
+      uses: dante-ev/latex-action@v2
+
+    # Step 3: Compile the LaTeX file
+    - name: Compile LaTeX
+      run: latexmk -pdf -silent -interaction=nonstopmode ${{ env.TEX_FILE }}
+
+    # Step 4: Save the compiled PDF to the repository
+    - name: Commit and push PDF
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        mv "${{ env.PDF_FILE }}" output/${{ env.PDF_FILE }}  # Optional: Move to a specific folder
+        git add output/${{ env.PDF_FILE }}
+        git commit -m "Update compiled CV PDF"
+        git push
+
