@@ -27,6 +27,8 @@ jobs:
 
     # Step 3: Save the compiled PDF to the repository
     - name: Commit and push PDF
+      env:
+        GITHUB_TOKEN: ${{ secrets.REPO_TOKEN }}
       run: |
         git config --global user.name "martinippo01"
         git config --global user.email "martinippo@gmail.com"
