@@ -8,7 +8,7 @@ on:
 
 env:
   TEX_FILE: main.tex  # Change this to your LaTeX file name
-  PDF_FILE: Ippolito-cv.pdf  # Change this to your desired PDF name
+  PDF_FILE: your-cv.pdf  # Change this to your desired PDF name
 
 jobs:
   compile-latex:
@@ -19,15 +19,13 @@ jobs:
     - name: Check out repository
       uses: actions/checkout@v3
 
-    # Step 2: Set up LaTeX environment
-    - name: Set up TeX Live
-      uses: dante-ev/latex-action@v2
-
-    # Step 3: Compile the LaTeX file
+    # Step 2: Compile the LaTeX file
     - name: Compile LaTeX
-      run: latexmk -pdf -silent -interaction=nonstopmode ${{ env.TEX_FILE }}
+      uses: xu-cheng/latex-action@v2
+      with:
+        root_file: ${{ env.TEX_FILE }}
 
-    # Step 4: Save the compiled PDF to the repository
+    # Step 3: Save the compiled PDF to the repository
     - name: Commit and push PDF
       run: |
         git config --global user.name "github-actions[bot]"
