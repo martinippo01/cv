@@ -1,5 +1,4 @@
 \documentclass[11pt,a4paper,sans]{moderncv}
-\usepackage{lmodern}
 \moderncvstyle{banking}
 \moderncvcolor{black}
 \nopagenumbers{}
@@ -8,112 +7,122 @@
 \usepackage[scale=0.915]{geometry}
 \usepackage{import}
 \usepackage{multicol}
-\usepackage{import}
 \usepackage{enumitem}
-\usepackage[utf8]{inputenc}
 \usepackage{amssymb}
-
-
 \usepackage[english]{babel}
-\usepackage{multicol}
-\usepackage{vwcol} 
 
 \name{Martin Augusto}{Ippolito}
-\newcommand*{\customcventry}[7][.13em]{
-\begin{tabular}{@{}l}
-{\bfseries #4} \
-{\itshape #3}
-\end{tabular}
-\hfill
-\begin{tabular}{l@{}}
-{\bfseries #5} \
-{\itshape #2}
-\end{tabular}
-\ifx&#7&%
-\else{\
-\begin{minipage}{\maincolumnwidth}%
-\small#7%
-\end{minipage}}\fi%
-\par\addvspace{#1}}
 \begin{document}
 \makecvtitle
 \vspace*{-16mm}
-\begin{center}\textbf{ Full-Stack Developer}\end{center}
+\begin{center}\textbf{Full-Stack Developer - Buenos Aires, Argentina}\end{center}
+
+\section{Contact Information}
+
+\begin{minipage}{\linewidth}
+\begin{minipage}{0.5\linewidth}
+\begin{itemize}
+    \item \cvitem{Email}{martin@ippo.com.ar}
+    \item \cvitem{LinkedIn}{\href{https://www.linkedin.com/in/martin-ippolito/}{Martin Ippolito}}
+\end{itemize}
+\end{minipage}
+\begin{minipage}{0.5\linewidth}
+\begin{itemize}
+    
+    \item \cvitem{GitHub}{\href{https://github.com/martinippo01}{martinippo01}}
+    \item \cvitem{Website}{\href{https://www.ippo.com.ar}{ippo.com.ar}}
+\end{itemize}
+\end{minipage}
+\end{minipage}
 
 
 
-\begin{center}
-\begin{tabular}{ c c }
-\faEnvelope\enspace martin@ippo.com.ar\ \  & \faHome\enspace Buenos Aires, Argentina \\
-\end{tabular}
-\end{center}
-\begin{center}
-\begin{tabular}{ c c c }
-\faLinkedin\enspace \color{blue} \href{https://www.linkedin.com/in/martin-ippolito/}{Martin Ippolito}\ \  &
-\faGithub\enspace \color{blue} \href{https://github.com/martinippo01}{martinippo01} & \faGlobe\enspace \color{blue} \href{https://www.ippo.com.ar}{ippo.com.ar}
-\end{tabular}
-\end{center}
 
 
-
-\section{Profile}
-\justify
-{\footnotesize{Full-Stack Developer with a passion for creating innovative solutions and leveraging technology to drive business success. Possessing a solid foundation in software engineering with a focus on web development, database management, and cloud infrastructure. Equipped with years of experience both in Argentina and the United Kingdom. My expirience includes various roles, such as Software development, teaching programming, leading teams, and assisting in educational activities. Furthermore, developed several personal projects individually and in teams.}}
+% \section{Profile}
+% \justify
+% {Full-Stack Developer skilled in building scalable applications, optimizing cloud infrastructure, and leading teams. Passionate about creating innovative solutions and leveraging technology to drive business success. Possesses experience in software development, teaching, team leadership, and educational activities.}
 
 \section{Areas of Expertise}
-{\footnotesize{Front end Frameworks - Data bases (SQL and NoSQL) - OOP programming (Java and Python) - Team Leader - Teaching - Low level programming (C) - Cloud infrastructure (AWS and Azure).}}
+    \begin{minipage}{\linewidth}
+        \begin{minipage}{0.5\linewidth}
+            \begin{itemize}
+                \item Front-end Frameworks
+                \item Database Management (SQL and NoSQL)
+                \item Object-Oriented Programming (OOP)
+                \item Team Leadership
+            \end{itemize}
+        \end{minipage}
+        \begin{minipage}{0.5\linewidth}
+            \begin{itemize}
+                \item Teaching and Mentoring
+                \item Low-level Programming
+                \item Cloud Infrastructure and DevOps
+                \item Infrastructure as Code (IaC)
+            \end{itemize}
+        \end{minipage}
+    \end{minipage}
 
 \section{Professional Experience}
-
-\customcventry{05/2024 ‐ present}{{\color{blue}\href{https://wuru.ai/}{(Wúru)}}}{Software developer,}{\footnotesize{Buenos Aires, ARG}}{}{
-{\begin{itemize}[leftmargin=0.6cm, label={\textbullet}]
-\item Front end: Javascript with Svelte Framework
-\item Back end: Python with FastAPI
-\end{itemize}}}
-
-\customcventry{03/2022 ‐ 02/2025}{{\color{blue}\href{https://lasalleflorida.edu.ar/}{(La Salle Florida Technical School)}}}{Programming and networking teacher,}{\footnotesize{Buenos Aires, ARG}}{}{
-{\begin{itemize}[leftmargin=0.6cm, label={\textbullet}]
-\item Teaching advanced C programming, Networking protocolos and Web Development
-\end{itemize}}}
-
-\customcventry{10/2021 ‐ 08/2022}{{\color{blue}\href{https://www.sabf.org.ar/}{(South American Business Forum)}}}{Head of Media And Communication,}{\footnotesize{Buenos Aires, ARG}}{}{
-{\begin{itemize}[leftmargin=0.6cm, label={\textbullet}]
-\item Leader of a team of four. Responsible for the conference's image, graphic material and social media.
-\end{itemize}}}
-
-
-\customcventry{07/2019 - 08/2019}{{\color{blue}\href{https://www.millfieldenterprises.com/melhc}{(Millfield School)}}}{Activity Assistant,}{\footnotesize{Somerset, UK}}{}{
-{\begin{itemize}[leftmargin=0.6cm, label={\textbullet}]
-\item Responsible for groups of teenagers at the Millfield English Language Holiday Courses. Worked on campus.
-\end{itemize}}}
-
-
-
-
-\section{Education}
-\customcventry{2020-2025}{\color{blue}\href{https://www.itba.edu.ar/}{ITBA - Instituto Tecnológico de Buenos Aires}}{Software Engineer}{\footnotesize{Buenos Aires, ARG}}{}{}{}
-
-\customcventry{2013-2019}{\color{blue}\href{https://lasalleflorida.edu.ar/}{Instituto La Salle Florida}}{Electronic Technician}{\footnotesize{Buenos Aires, ARG}}{}{}{}
-
-\section{Projects}
-See full list of projects at: {\color{blue} \href{https://www.ippo.com.ar/projects}{ippo.com.ar/projects}}
-
-
-\section{Skills}
-{\begin{itemize}[label=\textbullet]
-\item {\textbf{OOP languages:} Python, Java.}
-\item {\textbf{DB:} Worked with PostgreSQL, MongoDB, Cassandra, neo4j and Redis.}
-\item {\textbf{Front-End frameworks:} React, Next.JS, Vue.JS, Ionic framework, Svelte.}
-\item {\textbf{Low level programming:} C.}
-\item {\textbf{Cloud:} Worked with AWS and Azure.}
+\cventry{05/2024 -- Present}{Software Developer}{\href{https://wuru.ai/}{W\'uru}}{Buenos Aires, ARG}{}{
+\begin{itemize}
+    \item Developed front-end applications using JavaScript with Svelte.
+    \item Built and maintained back-end services with Python and FastAPI.
 \end{itemize}}
 
-\section{Languages}
-\begin{multicols}{2}
-    \begin{itemize}[label=\textbullet]
-    \item \textbf{English} [C1]
-    \item {\textbf{Spanish} [Native]}
+\cventry{03/2022 -- 02/2025}{Programming and Networking Teacher}{\href{https://lasalleflorida.edu.ar/}{La Salle Florida Technical School}}{Buenos Aires, ARG}{}{
+\begin{itemize}
+    \item Taught advanced C programming, networking protocols, and web development.
+\end{itemize}}
 
-    \end{itemize}
-\end{multicols}
+\cventry{10/2021 -- 08/2022}{Head of Media and Communication}{\href{https://www.sabf.org.ar/}{South American Business Forum}}{Buenos Aires, ARG}{}{
+\begin{itemize}
+    \item Led a team of four, managing the conference's image, graphic materials, and social media presence.
+\end{itemize}}
+
+\cventry{07/2019 -- 08/2019}{Activity Assistant}{\href{https://www.millfieldenterprises.com/melhc}{Millfield School}}{Somerset, UK}{}{
+\begin{itemize}
+    \item Supervised groups of teenagers at the Millfield English Language Holiday Courses.
+\end{itemize}}
+
+\section{Education}
+\cventry{2020 -- 2025}{Software Engineering}{\href{https://www.itba.edu.ar/}{Instituto Tecnol\'ogico de Buenos Aires (ITBA)}}{Buenos Aires, ARG}{}{}
+\cventry{2013 -- 2019}{Electronic Technician}{\href{https://lasalleflorida.edu.ar/}{Instituto La Salle Florida}}{Buenos Aires, ARG}{}{}
+
+\section{Projects}
+For a full list of projects, visit: \href{https://www.ippo.com.ar/projects}{ippo.com.ar/projects}
+
+\section{Skills}
+    \begin{minipage}{\linewidth}
+        \begin{minipage}{0.5\linewidth}
+            \begin{itemize}
+                \item \textbf{Programming Languages:} JavaScript, TypeScript, Python, Java, C.
+                \item \textbf{Databases:} PostgreSQL, MongoDB, Cassandra, Neo4j, Kafka, Redis.
+            \end{itemize}
+        \end{minipage}
+        \begin{minipage}{0.
+        5\linewidth}
+            \begin{itemize}
+                \item \textbf{Front-End Frameworks:} Svelte, React, Next.js, Vue.js, Ionic.
+                \item \textbf{Cloud \& DevOps:} AWS, Azure, Terraform (Infrastructure as Code).
+                \item \textbf{Other:} Low-level programming, System Design.
+            \end{itemize}
+        \end{minipage}
+    \end{minipage}            
+
+
+
+\section{Languages}
+    \begin{minipage}{\linewidth}
+        \begin{minipage}{0.5\linewidth}
+            \begin{itemize}
+                \item \textbf{Spanish:} Native
+            \end{itemize}            
+        \end{minipage}
+        \begin{minipage}{0.5\linewidth}
+            \begin{itemize}
+                \item \textbf{English:} C1 - Full Professional Proficiency
+            \end{itemize}            
+        \end{minipage}
+    \end{minipage}
 \end{document}
